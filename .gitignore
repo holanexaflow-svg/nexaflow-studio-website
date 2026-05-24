@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+nohup.out
+
+# Dev server
+*.pid
+
+# Editor
+.vscode/
+.idea/

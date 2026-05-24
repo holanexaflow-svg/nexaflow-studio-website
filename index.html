@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaFlow Studio — Webs, IA y Automatización para Negocios Locales</title>
+  <meta name="description" content="NexaFlow Studio diseña webs premium, chatbots e sistemas de IA para negocios locales y pymes. Más captación, menos trabajo manual.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="NexaFlow Studio — Webs, IA y Automatización">
+  <meta property="og:description" content="Modernizamos negocios locales con webs premium, IA y automatización. Diseño que convierte.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#080808">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260524g">
+</head>
+<body>
+
+<!-- Grain texture overlay -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo" aria-label="NexaFlow Studio — inicio">
+      Nexa<span class="logo-accent">Flow</span><span class="logo-dot">.</span>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#servicios" role="listitem">Servicios</a>
+      <a href="#proceso" role="listitem">Proceso</a>
+      <a href="#portfolio" role="listitem">Portfolio</a>
+      <a href="#diferenciacion" role="listitem">¿Por qué nosotros?</a>
+      <a href="#precios" role="listitem">Precios</a>
+    </div>
+    <a href="#contacto" class="btn btn-primary nav-cta">Auditoría gratis</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay nav -->
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+  <button class="overlay-close" id="overlay-close" aria-label="Cerrar menú">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <nav class="overlay-nav" aria-label="Menú móvil">
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#diferenciacion">¿Por qué nosotros?</a>
+    <a href="#precios">Precios</a>
+    <a href="#contacto" class="btn btn-primary overlay-btn">Auditoría gratis →</a>
+  </nav>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio" aria-label="Inicio">
+  <div class="hero-gradient" aria-hidden="true"></div>
+  <div class="hero-ambient" aria-hidden="true"></div>
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <div class="hero-kicker">
+        <span class="kicker-dot" aria-hidden="true"></span>
+        Sistema IA activo — Negocios locales y pymes
+      </div>
+      <h1 class="hero-title">
+        Modernizamos<br>
+        tu negocio<br>
+        con webs <em class="hero-em">premium</em>,<br>
+        IA y automatización.
+      </h1>
+      <p class="hero-sub">
+        Sistemas digitales que trabajan por ti.<br>Más clientes, menos tareas manuales.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary btn-lg">Solicitar auditoría gratuita</a>
+        <a href="#servicios" class="btn btn-ghost btn-lg">Ver servicios →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <span class="trust-num lime">&lt;3</span><span class="trust-num-suffix">sem</span>
+          <span class="trust-label">tiempo de entrega</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-num" data-target="72">0</span><span class="trust-num-suffix">h</span>
+          <span class="trust-label">entrega de primeros resultados</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-num cyan" data-target="100">0</span><span class="trust-num-suffix">%</span>
+          <span class="trust-label">proyectos a medida</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS Dashboard Mockup -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="dash">
+        <div class="dash-bar">
+          <div class="dash-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <div class="dash-url">nexaflow.studio / dashboard</div>
+        </div>
+        <div class="dash-body">
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <div class="dm-label">Leads captados</div>
+              <div class="dm-value lime" data-target="247">0</div>
+              <div class="dm-delta up">↑ 23% este mes</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dm-label">Citas</div>
+              <div class="dm-value" data-target="89">0</div>
+              <div class="dm-delta up">↑ 18%</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dm-label">Conversión</div>
+              <div class="dm-value cyan">36%</div>
+              <div class="dm-delta up">↑ 8pt</div>
+            </div>
+          </div>
+
+          <div class="dash-chart">
+            <div class="dash-chart-label">Visitas mensuales</div>
+            <div class="dash-bars">
+              <div class="db" style="--h:42%"></div>
+              <div class="db" style="--h:58%"></div>
+              <div class="db" style="--h:51%"></div>
+              <div class="db" style="--h:74%"></div>
+              <div class="db" style="--h:68%"></div>
+              <div class="db" style="--h:87%"></div>
+              <div class="db is-active" style="--h:82%"></div>
+            </div>
+          </div>
+
+          <div class="dash-chat">
+            <div class="dash-chat-header">
+              <div class="chat-live">
+                <span class="chat-dot"></span>
+                Chatbot activo
+              </div>
+              <span class="chat-tag">IA</span>
+            </div>
+            <div class="dash-messages">
+              <div class="dmsg bot">¿En qué puedo ayudarte hoy?</div>
+              <div class="dmsg user">Quiero pedir una cita</div>
+              <div class="dmsg bot">Perfecto, ¿qué día te viene mejor?</div>
+              <div class="dmsg typing" aria-label="escribiendo">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== PROBLEMA ===== -->
+<section class="problem" id="problema" aria-label="El problema">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">El problema</p>
+      <h2 class="section-title">Tu negocio puede estar perdiendo<br>clientes antes de hablar con ellos.</h2>
+      <p class="section-sub">Tienes presencia digital. El problema es que no está convirtiendo.</p>
+    </div>
+    <div class="problem-grid stagger-grid">
+      <div class="problem-card" data-tilt>
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Web que no convierte</h3>
+        <p>Una web anticuada transmite desconfianza antes de que nadie te contacte.</p>
+      </div>
+      <div class="problem-card" data-tilt>
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Invisible localmente</h3>
+        <p>Si no estás entre los primeros en Maps, tu competencia se lleva esos clientes.</p>
+      </div>
+      <div class="problem-card" data-tilt>
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>Todo en manual</h3>
+        <p>Horas en emails, seguimientos y formularios que se podrían automatizar hoy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SERVICIOS DETALLADOS ===== -->
+<section class="services" id="servicios" aria-label="Servicios detallados">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">Servicios</p>
+      <h2 class="section-title">Cada servicio, pensado<br>para resultados reales.</h2>
+    </div>
+    <div class="services-visual-wrap" data-reveal>
+      <div class="svc-ai-visual">
+        <!-- Neural network SVG -->
+        <svg class="svc-nn-svg" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+          <!-- Layer lines (connections) -->
+          <!-- Input → Hidden 1 -->
+          <line x1="120" y1="50"  x2="310" y2="40"  stroke="rgba(163,230,53,0.18)" stroke-width="1"/>
+          <line x1="120" y1="50"  x2="310" y2="110" stroke="rgba(163,230,53,0.12)" stroke-width="1"/>
+          <line x1="120" y1="50"  x2="310" y2="180" stroke="rgba(163,230,53,0.08)" stroke-width="1"/>
+          <line x1="120" y1="110" x2="310" y2="40"  stroke="rgba(163,230,53,0.10)" stroke-width="1"/>
+          <line x1="120" y1="110" x2="310" y2="110" stroke="rgba(163,230,53,0.20)" stroke-width="1"/>
+          <line x1="120" y1="110" x2="310" y2="180" stroke="rgba(163,230,53,0.12)" stroke-width="1"/>
+          <line x1="120" y1="170" x2="310" y2="40"  stroke="rgba(163,230,53,0.08)" stroke-width="1"/>
+          <line x1="120" y1="170" x2="310" y2="110" stroke="rgba(163,230,53,0.14)" stroke-width="1"/>
+          <line x1="120" y1="170" x2="310" y2="180" stroke="rgba(163,230,53,0.18)" stroke-width="1"/>
+          <!-- Hidden 1 → Hidden 2 -->
+          <line x1="310" y1="40"  x2="500" y2="30"  stroke="rgba(34,211,238,0.15)" stroke-width="1"/>
+          <line x1="310" y1="40"  x2="500" y2="90"  stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+          <line x1="310" y1="40"  x2="500" y2="150" stroke="rgba(34,211,238,0.08)" stroke-width="1"/>
+          <line x1="310" y1="40"  x2="500" y2="200" stroke="rgba(34,211,238,0.06)" stroke-width="1"/>
+          <line x1="310" y1="110" x2="500" y2="30"  stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+          <line x1="310" y1="110" x2="500" y2="90"  stroke="rgba(34,211,238,0.18)" stroke-width="1"/>
+          <line x1="310" y1="110" x2="500" y2="150" stroke="rgba(34,211,238,0.14)" stroke-width="1"/>
+          <line x1="310" y1="110" x2="500" y2="200" stroke="rgba(34,211,238,0.08)" stroke-width="1"/>
+          <line x1="310" y1="180" x2="500" y2="30"  stroke="rgba(34,211,238,0.06)" stroke-width="1"/>
+          <line x1="310" y1="180" x2="500" y2="90"  stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+          <line x1="310" y1="180" x2="500" y2="150" stroke="rgba(34,211,238,0.16)" stroke-width="1"/>
+          <line x1="310" y1="180" x2="500" y2="200" stroke="rgba(34,211,238,0.18)" stroke-width="1"/>
+          <!-- Hidden 2 → Hidden 3 -->
+          <line x1="500" y1="30"  x2="690" y2="50"  stroke="rgba(163,230,53,0.14)" stroke-width="1"/>
+          <line x1="500" y1="30"  x2="690" y2="110" stroke="rgba(163,230,53,0.08)" stroke-width="1"/>
+          <line x1="500" y1="30"  x2="690" y2="170" stroke="rgba(163,230,53,0.06)" stroke-width="1"/>
+          <line x1="500" y1="90"  x2="690" y2="50"  stroke="rgba(163,230,53,0.10)" stroke-width="1"/>
+          <line x1="500" y1="90"  x2="690" y2="110" stroke="rgba(163,230,53,0.16)" stroke-width="1"/>
+          <line x1="500" y1="90"  x2="690" y2="170" stroke="rgba(163,230,53,0.10)" stroke-width="1"/>
+          <line x1="500" y1="150" x2="690" y2="50"  stroke="rgba(163,230,53,0.08)" stroke-width="1"/>
+          <line x1="500" y1="150" x2="690" y2="110" stroke="rgba(163,230,53,0.12)" stroke-width="1"/>
+          <line x1="500" y1="150" x2="690" y2="170" stroke="rgba(163,230,53,0.14)" stroke-width="1"/>
+          <line x1="500" y1="200" x2="690" y2="50"  stroke="rgba(163,230,53,0.06)" stroke-width="1"/>
+          <line x1="500" y1="200" x2="690" y2="110" stroke="rgba(163,230,53,0.08)" stroke-width="1"/>
+          <line x1="500" y1="200" x2="690" y2="170" stroke="rgba(163,230,53,0.16)" stroke-width="1"/>
+          <!-- Hidden 3 → Output -->
+          <line x1="690" y1="50"  x2="800" y2="80"  stroke="rgba(34,211,238,0.16)" stroke-width="1"/>
+          <line x1="690" y1="50"  x2="800" y2="140" stroke="rgba(34,211,238,0.08)" stroke-width="1"/>
+          <line x1="690" y1="110" x2="800" y2="80"  stroke="rgba(34,211,238,0.14)" stroke-width="1"/>
+          <line x1="690" y1="110" x2="800" y2="140" stroke="rgba(34,211,238,0.14)" stroke-width="1"/>
+          <line x1="690" y1="170" x2="800" y2="80"  stroke="rgba(34,211,238,0.08)" stroke-width="1"/>
+          <line x1="690" y1="170" x2="800" y2="140" stroke="rgba(34,211,238,0.16)" stroke-width="1"/>
+
+          <!-- Animated signal pulses -->
+          <circle r="3" fill="rgba(163,230,53,0.9)"><animateMotion dur="2.2s" repeatCount="indefinite" path="M120,110 L310,110"/></circle>
+          <circle r="3" fill="rgba(163,230,53,0.9)"><animateMotion dur="2.2s" begin="0.4s" repeatCount="indefinite" path="M310,40 L500,90"/></circle>
+          <circle r="3" fill="rgba(34,211,238,0.9)"><animateMotion dur="2.2s" begin="0.8s" repeatCount="indefinite" path="M500,150 L690,110"/></circle>
+          <circle r="3" fill="rgba(34,211,238,0.9)"><animateMotion dur="2.2s" begin="1.2s" repeatCount="indefinite" path="M690,50 L800,80"/></circle>
+          <circle r="2.5" fill="rgba(163,230,53,0.7)"><animateMotion dur="3s" begin="0.6s" repeatCount="indefinite" path="M120,50 L310,40"/></circle>
+          <circle r="2.5" fill="rgba(163,230,53,0.7)"><animateMotion dur="3s" begin="1.4s" repeatCount="indefinite" path="M310,180 L500,200"/></circle>
+          <circle r="2.5" fill="rgba(34,211,238,0.7)"><animateMotion dur="3s" begin="1.8s" repeatCount="indefinite" path="M500,30 L690,50"/></circle>
+          <circle r="2.5" fill="rgba(34,211,238,0.7)"><animateMotion dur="3s" begin="0.2s" repeatCount="indefinite" path="M690,170 L800,140"/></circle>
+
+          <!-- Input nodes -->
+          <circle cx="120" cy="50"  r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.6)" stroke-width="1.5"/>
+          <circle cx="120" cy="110" r="9" fill="#0a0f1a" stroke="rgba(163,230,53,0.9)" stroke-width="1.5"><animate attributeName="r" values="9;11;9" dur="2.5s" repeatCount="indefinite"/></circle>
+          <circle cx="120" cy="170" r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.6)" stroke-width="1.5"/>
+
+          <!-- Hidden layer 1 -->
+          <circle cx="310" cy="40"  r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.45)" stroke-width="1.5"/>
+          <circle cx="310" cy="110" r="8" fill="#0a0f1a" stroke="rgba(163,230,53,0.7)" stroke-width="1.5"/>
+          <circle cx="310" cy="180" r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.45)" stroke-width="1.5"/>
+
+          <!-- Hidden layer 2 -->
+          <circle cx="500" cy="30"  r="6" fill="#0a0f1a" stroke="rgba(34,211,238,0.4)" stroke-width="1.5"/>
+          <circle cx="500" cy="90"  r="8" fill="#0a0f1a" stroke="rgba(34,211,238,0.7)" stroke-width="1.5"/>
+          <circle cx="500" cy="150" r="8" fill="#0a0f1a" stroke="rgba(34,211,238,0.7)" stroke-width="1.5"><animate attributeName="r" values="8;10;8" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
+          <circle cx="500" cy="200" r="6" fill="#0a0f1a" stroke="rgba(34,211,238,0.4)" stroke-width="1.5"/>
+
+          <!-- Hidden layer 3 -->
+          <circle cx="690" cy="50"  r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.5)" stroke-width="1.5"/>
+          <circle cx="690" cy="110" r="8" fill="#0a0f1a" stroke="rgba(163,230,53,0.75)" stroke-width="1.5"/>
+          <circle cx="690" cy="170" r="7" fill="#0a0f1a" stroke="rgba(163,230,53,0.5)" stroke-width="1.5"/>
+
+          <!-- Output nodes -->
+          <circle cx="800" cy="80"  r="10" fill="#0a0f1a" stroke="rgba(34,211,238,0.9)" stroke-width="2"><animate attributeName="r" values="10;13;10" dur="2s" repeatCount="indefinite"/></circle>
+          <circle cx="800" cy="140" r="8"  fill="#0a0f1a" stroke="rgba(163,230,53,0.8)" stroke-width="2"/>
+
+          <!-- Layer labels -->
+          <text x="120" y="210" text-anchor="middle" font-size="10" fill="rgba(240,237,232,0.25)" font-family="Space Grotesk, sans-serif">INPUT</text>
+          <text x="310" y="210" text-anchor="middle" font-size="10" fill="rgba(240,237,232,0.2)"  font-family="Space Grotesk, sans-serif">HIDDEN</text>
+          <text x="500" y="218" text-anchor="middle" font-size="10" fill="rgba(240,237,232,0.2)"  font-family="Space Grotesk, sans-serif">HIDDEN</text>
+          <text x="690" y="210" text-anchor="middle" font-size="10" fill="rgba(240,237,232,0.2)"  font-family="Space Grotesk, sans-serif">HIDDEN</text>
+          <text x="800" y="175" text-anchor="middle" font-size="10" fill="rgba(240,237,232,0.25)" font-family="Space Grotesk, sans-serif">OUTPUT</text>
+        </svg>
+
+        <div class="svc-ai-label">Red neuronal · Modelo de lenguaje · Automatización</div>
+        <div class="svc-ai-tags">
+          <span>IA</span><span>Automatización</span><span>Diseño premium</span><span>SEO local</span>
+        </div>
+      </div>
+    </div>
+    <div class="services-list">
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">01</div>
+        <div class="service-content">
+          <h3 class="service-title">Diseño web premium</h3>
+          <p class="service-desc">Diseño a medida, sin plantillas. Cada proyecto construido desde cero para convertir visitas en clientes reales.</p>
+          <div class="service-tags">
+            <span>Responsive</span><span>SEO básico</span><span>CRO</span><span>Carga rápida</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">02</div>
+        <div class="service-content">
+          <h3 class="service-title">Chatbots con IA</h3>
+          <p class="service-desc">Responden, captan y cualifican leads 24/7. Integración directa con tu web y WhatsApp.</p>
+          <div class="service-tags">
+            <span>24/7</span><span>WhatsApp</span><span>Captación</span><span>IA</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">03</div>
+        <div class="service-content">
+          <h3 class="service-title">Automatizaciones</h3>
+          <p class="service-desc">Formularios, CRM, emails y recordatorios en automático. Horas de trabajo recuperadas cada semana.</p>
+          <div class="service-tags">
+            <span>Make</span><span>n8n</span><span>CRM</span><span>Email</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">04</div>
+        <div class="service-content">
+          <h3 class="service-title">Google Maps optimizado</h3>
+          <p class="service-desc">Perfil completo, categorías, reseñas y palabras clave. Para que te encuentren antes que a tu competencia.</p>
+          <div class="service-tags">
+            <span>GBP</span><span>Reseñas</span><span>Visibilidad local</span><span>Mapas</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">05</div>
+        <div class="service-content">
+          <h3 class="service-title">SEO local básico</h3>
+          <p class="service-desc">Estructura técnica y contenido local para que Google te priorice cuando más importa.</p>
+          <div class="service-tags">
+            <span>On-page</span><span>Local SEO</span><span>Schema</span><span>Core Web Vitals</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-num" aria-hidden="true">06</div>
+        <div class="service-content">
+          <h3 class="service-title">Branding digital</h3>
+          <p class="service-desc">Paleta, tipografía y tono. Una identidad que diferencia y que no se olvida.</p>
+          <div class="service-tags">
+            <span>Identidad visual</span><span>Guía de marca</span><span>RRSS</span><span>Coherencia</span>
+          </div>
+        </div>
+        <div class="service-arrow" aria-hidden="true">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3D SHOWCASE ===== -->
+<section class="showcase3d" id="showcase" aria-label="Ejemplo de web premium">
+  <div class="container">
+    <div class="sc3d-grid">
+      <div class="sc3d-text" data-reveal>
+        <p class="eyebrow">En acción</p>
+        <h2 class="section-title">Así se ve una web<br>que <em class="lime">realmente</em> convierte.</h2>
+        <p class="section-sub">Una web premium para negocios locales, diseñada por NexaFlow. Rápida, moderna y enfocada en convertir visitas en clientes reales.</p>
+        <ul class="sc3d-features">
+          <li><span class="lime">→</span> Diseño 100% a medida, no plantillas</li>
+          <li><span class="lime">→</span> CTA siempre visible para captar citas</li>
+          <li><span class="lime">→</span> Velocidad A en PageSpeed</li>
+          <li><span class="lime">→</span> SEO local integrado desde el día 1</li>
+          <li><span class="lime">→</span> Adaptada a móvil, tablet y escritorio</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Quiero una web así →</a>
+      </div>
+
+      <div class="sc3d-stage">
+        <div class="sc3d-browser" id="sc3d-browser">
+          <!-- Browser chrome -->
+          <div class="sc3d-chrome">
+            <div class="sc3d-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="sc3d-url">
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="#10b981"><path d="M12 2L4 6v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V6l-8-4z"/></svg>
+              tuempresa.es
+            </div>
+            <div class="sc3d-chrome-icons"><span></span><span></span></div>
+          </div>
+
+          <!-- Scrolling website mockup -->
+          <div class="sc3d-viewport">
+            <div class="dental-page" id="dental-page">
+
+              <!-- Nav -->
+              <nav class="dp-nav">
+                <div class="dp-logo"><strong>Estudio</strong> <span class="dp-logo-sub">García</span></div>
+                <div class="dp-navlinks">
+                  <span>Servicios</span><span>Equipo</span><span>Blog</span>
+                </div>
+                <div class="dp-nav-cta">Contactar</div>
+              </nav>
+
+              <!-- Hero -->
+              <div class="dp-hero">
+                <div class="dp-hero-left">
+                  <div class="dp-badge">
+                    <span class="dp-badge-stars">★★★★★</span> 4.9 · Madrid
+                  </div>
+                  <h1 class="dp-h1">Crece online,<br><em>empieza hoy.</em></h1>
+                  <p class="dp-sub">Web premium, SEO local y automatización para destacar frente a tu competencia.</p>
+                  <div class="dp-hero-btns">
+                    <div class="dp-btn-primary">Primera reunión gratis →</div>
+                    <div class="dp-btn-ghost">Ver servicios</div>
+                  </div>
+                </div>
+                <div class="dp-hero-visual">
+                  <div class="dp-photo-blob">
+                    <div class="dp-photo-highlight"></div>
+                    <svg class="dp-tooth-svg" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+                      <polygon points="28,5 33,19 48,19 36,28 40,43 28,34 16,43 20,28 8,19 23,19" fill="white" fill-opacity="0.92"/>
+                    </svg>
+                    <div class="dp-trust-chip">
+                      <div class="dp-trust-dot"></div>
+                      <span>+800 clientes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services -->
+              <div class="dp-services">
+                <div class="dp-section-label">Servicios</div>
+                <div class="dp-srv-grid">
+                  <div class="dp-srv-card">
+                    <div class="dp-srv-icon-wrap"><span class="dp-srv-dot d1"></span></div>
+                    <div class="dp-srv-title">Diseño web premium</div>
+                    <div class="dp-srv-desc">A medida, sin plantillas. Entregamos en menos de 3 semanas.</div>
+                  </div>
+                  <div class="dp-srv-card">
+                    <div class="dp-srv-icon-wrap"><span class="dp-srv-dot d2"></span></div>
+                    <div class="dp-srv-title">SEO & Google Maps</div>
+                    <div class="dp-srv-desc">Posición #1 local con perfil completo y reseñas estratégicas.</div>
+                  </div>
+                  <div class="dp-srv-card">
+                    <div class="dp-srv-icon-wrap"><span class="dp-srv-dot d3"></span></div>
+                    <div class="dp-srv-title">Chatbot & Automatización</div>
+                    <div class="dp-srv-desc">Capta leads 24/7 y notifica al instante sin tocar el teléfono.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stats -->
+              <div class="dp-stats-row">
+                <div class="dp-stat">
+                  <div class="dp-stat-n">+800</div>
+                  <div class="dp-stat-l">Clientes</div>
+                </div>
+                <div class="dp-stat">
+                  <div class="dp-stat-n">&lt;3 sem</div>
+                  <div class="dp-stat-l">Entrega</div>
+                </div>
+                <div class="dp-stat">
+                  <div class="dp-stat-n">4.9 ★</div>
+                  <div class="dp-stat-l">Google Maps</div>
+                </div>
+                <div class="dp-stat">
+                  <div class="dp-stat-n">100%</div>
+                  <div class="dp-stat-l">A medida</div>
+                </div>
+              </div>
+
+              <!-- CTA bottom -->
+              <div class="dp-cta-block">
+                <p class="dp-cta-tag">Sin compromiso · Auditoría completa · Gratis</p>
+                <h2 class="dp-cta-h">Primera reunión<br><em>completamente gratis.</em></h2>
+                <div class="dp-cta-btn">Reservar ahora →</div>
+              </div>
+
+            </div><!-- /page -->
+          </div><!-- /sc3d-viewport -->
+        </div><!-- /sc3d-browser -->
+
+        <!-- Reflection glow -->
+        <div class="sc3d-shadow" aria-hidden="true"></div>
+      </div><!-- /sc3d-stage -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESO ===== -->
+<section class="process" id="proceso" aria-label="Proceso de trabajo">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">Proceso</p>
+      <h2 class="section-title">Un sistema claro,<br>rápido y profesional.</h2>
+      <p class="section-sub">Cada fase, definida para entregar resultados reales en el menor tiempo posible.</p>
+    </div>
+    <div class="process-timeline">
+      <div class="ptl-track" aria-hidden="true"></div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.0s">
+        <div class="ptl-node"><span>01</span></div>
+        <div class="ptl-body">
+          <h3>Auditoría</h3>
+          <p>Analizamos tu web, presencia local y competencia. Detectamos exactamente qué está fallando.</p>
+        </div>
+      </div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.1s">
+        <div class="ptl-node"><span>02</span></div>
+        <div class="ptl-body">
+          <h3>Estrategia</h3>
+          <p>Plan a medida: qué activar, en qué orden y con qué objetivo de captación para tu negocio.</p>
+        </div>
+      </div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.2s">
+        <div class="ptl-node"><span>03</span></div>
+        <div class="ptl-body">
+          <h3>Diseño</h3>
+          <p>Construimos tu web o sistema desde cero. Revisión conjunta hasta que esté perfecto.</p>
+        </div>
+      </div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.3s">
+        <div class="ptl-node"><span>04</span></div>
+        <div class="ptl-body">
+          <h3>Automatización</h3>
+          <p>Conectamos formularios, chatbot, CRM, email y WhatsApp en un flujo totalmente automático.</p>
+        </div>
+      </div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.4s">
+        <div class="ptl-node"><span>05</span></div>
+        <div class="ptl-body">
+          <h3>Lanzamiento</h3>
+          <p>Deploy con verificación completa: velocidad, SEO, mobile, analytics y tracking de leads.</p>
+        </div>
+      </div>
+
+      <div class="ptl-step" data-reveal style="--ptl-delay:0.5s">
+        <div class="ptl-node"><span>06</span></div>
+        <div class="ptl-body">
+          <h3>Optimización</h3>
+          <p>Revisamos resultados y mejoramos. Tu sistema digital siempre evoluciona con tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEMOS ===== -->
+<section class="portfolio" id="portfolio" aria-label="Demos por sector">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">Demos</p>
+      <h2 class="section-title">¿Tu sector? Tenemos<br>una propuesta para ti.</h2>
+      <p class="section-sub">Ejemplos concretos de lo que construiríamos para tu tipo de negocio.</p>
+    </div>
+    <div class="demos-grid stagger-grid">
+
+      <!-- Demo 1: Clínica dental -->
+      <div class="demo-card" data-tilt>
+        <div class="demo-visual">
+          <div class="demo-visual-overlay">
+            <div class="demo-visual-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="demo-visual-label">Clínica Dental Premium</div>
+            <div class="demo-visual-mini">
+              <div class="demo-mini-bar active" style="width:40px"></div>
+              <div class="demo-mini-bar active" style="width:24px"></div>
+              <div class="demo-mini-bar" style="width:32px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-body">
+          <span class="demo-sector-tag">Salud &amp; Bienestar</span>
+          <h3 class="demo-title">Web + chatbot + Google Maps para clínica dental</h3>
+          <div class="demo-row">
+            <div class="demo-row-label">Problema detectado</div>
+            <div class="demo-row-text">Sin citas online, invisible en Maps, respuestas lentas a leads.</div>
+          </div>
+          <div class="demo-row">
+            <div class="demo-row-label">Solución propuesta</div>
+            <div class="demo-row-text solution">Web con reserva integrada, chatbot 24/7 y posición #1 local.</div>
+          </div>
+          <div class="demo-cta">
+            <a href="#contacto" class="demo-cta-link">Ver propuesta →</a>
+            <span class="demo-cta-badge">Demo activo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 2: Centro estética -->
+      <div class="demo-card" data-tilt>
+        <div class="demo-visual">
+          <div class="demo-visual-overlay">
+            <div class="demo-visual-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="demo-visual-label">Centro de Estética</div>
+            <div class="demo-visual-mini">
+              <div class="demo-mini-bar active" style="width:30px"></div>
+              <div class="demo-mini-bar active" style="width:48px"></div>
+              <div class="demo-mini-bar" style="width:20px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-body">
+          <span class="demo-sector-tag">Belleza &amp; Estética</span>
+          <h3 class="demo-title">Sistema de captación para centro de belleza</h3>
+          <div class="demo-row">
+            <div class="demo-row-label">Problema detectado</div>
+            <div class="demo-row-text">Agenda manual por WhatsApp, sin web propia, sin reseñas activas.</div>
+          </div>
+          <div class="demo-row">
+            <div class="demo-row-label">Solución propuesta</div>
+            <div class="demo-row-text solution">Web con booking online, recordatorios automáticos y SEO local.</div>
+          </div>
+          <div class="demo-cta">
+            <a href="#contacto" class="demo-cta-link">Ver propuesta →</a>
+            <span class="demo-cta-badge">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 3: Negocio local -->
+      <div class="demo-card" data-tilt>
+        <div class="demo-visual">
+          <div class="demo-visual-overlay">
+            <div class="demo-visual-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="demo-visual-label">Negocio Local</div>
+            <div class="demo-visual-mini">
+              <div class="demo-mini-bar" style="width:36px"></div>
+              <div class="demo-mini-bar active" style="width:28px"></div>
+              <div class="demo-mini-bar active" style="width:44px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-body">
+          <span class="demo-sector-tag">Negocios Locales</span>
+          <h3 class="demo-title">Presencia digital completa para pyme local</h3>
+          <div class="demo-row">
+            <div class="demo-row-label">Problema detectado</div>
+            <div class="demo-row-text">Web desactualizada, sin captación activa y competencia por delante.</div>
+          </div>
+          <div class="demo-row">
+            <div class="demo-row-label">Solución propuesta</div>
+            <div class="demo-row-text solution">Web nueva, automatización de leads y Maps optimizado.</div>
+          </div>
+          <div class="demo-cta">
+            <a href="#contacto" class="demo-cta-link">Ver propuesta →</a>
+            <span class="demo-cta-badge">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARATIVA ===== -->
+<section class="comparison" id="diferenciacion" aria-label="Por qué NexaFlow">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">¿Por qué nosotros?</p>
+      <h2 class="section-title">No somos una agencia<br>tradicional.</h2>
+      <p class="section-sub">Rápidos, enfocados en resultados y con tecnología IA que la mayoría de agencias todavía no usa.</p>
+    </div>
+    <div class="comparison-table" data-reveal>
+      <div class="ct-header">
+        <div class="ct-feature">Aspecto</div>
+        <div class="ct-col traditional">Agencia tradicional</div>
+        <div class="ct-col nexaflow">NexaFlow Studio</div>
+      </div>
+      <div class="ct-body">
+        <div class="ct-row">
+          <div class="ct-feature">Diseño web</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> Plantillas genéricas</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> A medida, premium</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Automatización</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> Procesos manuales</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> Flujos automáticos</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Inteligencia Artificial</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> No incluyen IA</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> IA integrada</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Tiempo de entrega</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> 2–3 meses</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> 2–4 semanas</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Enfoque</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> Solo diseño estético</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> 100% conversión</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Soporte</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> Solo errores técnicos</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> Acompañamiento continuo</div>
+        </div>
+        <div class="ct-row">
+          <div class="ct-feature">Escalabilidad</div>
+          <div class="ct-col traditional"><span class="bad">✗</span> Sistema rígido</div>
+          <div class="ct-col nexaflow"><span class="good">✓</span> Sistemas escalables</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRECIOS ===== -->
+<section class="pricing" id="precios" aria-label="Planes y precios">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">Inversión</p>
+      <h2 class="section-title">Elige el sistema<br>que tu negocio necesita.</h2>
+      <p class="section-sub">Sin permanencias. Sin letra pequeña. Cada plan incluye lo del anterior más una capa nueva de crecimiento.</p>
+    </div>
+    <div class="pricing-grid stagger-grid">
+
+      <!-- Plan 1 -->
+      <div class="pricing-card" data-tilt>
+        <div class="pc-badge">Presencia</div>
+        <div class="pc-price">
+          <span class="pc-amount">497</span>
+          <span class="pc-currency">€</span>
+          <span class="pc-iva">+ IVA</span>
+          <span class="pc-period">puesta en marcha</span>
+        </div>
+        <div class="pc-maintenance">
+          <span class="pc-maint-label">Mantenimiento mensual</span>
+          <span class="pc-maint-price">47 €<span>/mes</span></span>
+        </div>
+        <p class="pc-desc">Tu negocio visible y profesional en internet desde el primer día.</p>
+        <ul class="pc-features">
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Web premium a medida</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Google Maps optimizado</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Branding básico (logo, colores, tipografía)</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Estrategia de primeras reseñas</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Hosting y dominio 1 año incluido</li>
+          <li class="pc-feat-muted"><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>SEO local</li>
+          <li class="pc-feat-muted"><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Chatbot IA</li>
+          <li class="pc-feat-muted"><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Automatizaciones CRM</li>
+        </ul>
+        <a href="#contacto" class="btn btn-ghost pc-cta">Pedir presupuesto →</a>
+      </div>
+
+      <!-- Plan 2 (próximamente) -->
+      <div class="pricing-card is-featured is-soon" data-tilt>
+        <div class="pc-soon-ribbon">Próximamente</div>
+        <div class="pc-badge">Captación</div>
+        <div class="pc-price">
+          <span class="pc-amount-old">897 €</span>
+          <div class="pc-presale-row">
+            <span class="pc-amount">717</span>
+            <span class="pc-currency">€</span>
+            <span class="pc-iva">+ IVA</span>
+            <span class="pc-period">reserva anticipada</span>
+          </div>
+        </div>
+        <div class="pc-discount-tag">
+          <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M13 2H9L2 9l5 5 7-7V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="11" cy="5" r="1" fill="currentColor"/></svg>
+          20% dto. por reserva — precio real 897 € al lanzar
+        </div>
+        <div class="pc-maintenance">
+          <span class="pc-maint-label">Mantenimiento mensual</span>
+          <span class="pc-maint-price">97 €<span>/mes</span></span>
+        </div>
+        <p class="pc-desc">Capta clientes activamente. Presencia + SEO + chatbot que trabaja 24/7 por ti.</p>
+        <ul class="pc-features">
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Todo lo del plan Presencia</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>SEO local (Google búsquedas cercanas)</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Chatbot IA (web + WhatsApp)</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Captación de leads automática</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Informe mensual de resultados</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Soporte prioritario</li>
+          <li class="pc-feat-muted"><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Automatizaciones CRM</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary pc-cta">Reservar con descuento →</a>
+      </div>
+
+      <!-- Plan 3 (próximamente) -->
+      <div class="pricing-card is-soon" data-tilt>
+        <div class="pc-soon-ribbon">Próximamente</div>
+        <div class="pc-badge">Sistema Total</div>
+        <div class="pc-price">
+          <span class="pc-amount-old">1.497 €</span>
+          <div class="pc-presale-row">
+            <span class="pc-amount">1.197</span>
+            <span class="pc-currency">€</span>
+            <span class="pc-iva">+ IVA</span>
+            <span class="pc-period">reserva anticipada</span>
+          </div>
+        </div>
+        <div class="pc-discount-tag">
+          <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M13 2H9L2 9l5 5 7-7V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="11" cy="5" r="1" fill="currentColor"/></svg>
+          20% dto. por reserva — precio real 1.497 € al lanzar
+        </div>
+        <div class="pc-maintenance">
+          <span class="pc-maint-label">Mantenimiento mensual</span>
+          <span class="pc-maint-price">197 €<span>/mes</span></span>
+        </div>
+        <p class="pc-desc">Tu negocio en piloto automático. El sistema completo de captación y gestión de clientes.</p>
+        <ul class="pc-features">
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Todo lo del plan Captación</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Automatizaciones CRM completas</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Seguimiento automático de leads</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Emails y WhatsApp automatizados</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Dashboard de métricas en tiempo real</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Consultoría mensual 1:1 incluida</li>
+          <li><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Actualizaciones y mejoras continuas</li>
+        </ul>
+        <a href="#contacto" class="btn btn-ghost pc-cta pc-cta-soon">Reservar con descuento →</a>
+      </div>
+
+    </div>
+    <p class="pricing-note" data-reveal>Todos los proyectos incluyen auditoría inicial gratuita. Precios orientativos — te enviamos propuesta detallada sin compromiso.</p>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN EMOCIONAL ===== -->
+<section class="emotional" aria-label="Reflexión estratégica">
+  <div class="emotional-inner" data-reveal>
+    <p class="emotional-label">La realidad del mercado</p>
+    <h2 class="emotional-title">
+      Tu competencia ya está<br>captando clientes online.
+    </h2>
+    <p class="emotional-question">
+      La pregunta es:<br><em>¿estás ganando?</em>
+    </p>
+    <a href="#contacto" class="btn btn-primary btn-xl">Solicitar auditoría gratuita</a>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contact" id="contacto" aria-label="Formulario de contacto">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <p class="eyebrow">Contacto</p>
+      <h2 class="section-title">Hablemos de tu<br>negocio.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="contact-intro">Cuéntanos qué quieres mejorar. Te respondemos con una primera valoración en menos de 24h.</p>
+        <div class="contact-channels">
+          <a href="https://wa.me/34644218863?text=Hola%2C%20os%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20para%20mi%20negocio." class="contact-channel whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="channel-text">
+              <strong>WhatsApp</strong>
+              <span>Respuesta inmediata</span>
+            </div>
+          </a>
+          <a href="https://ig.me/m/nexaflow.studio" class="contact-channel instagram" target="_blank" rel="noopener" aria-label="Contactar por Instagram">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </div>
+            <div class="channel-text">
+              <strong>@nexaflow.studio</strong>
+              <span>Instagram</span>
+            </div>
+          </a>
+          <a href="mailto:hola.nexaflow@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%2C%0A%0AOs%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20digitales%20para%20mi%20negocio.%0A%0AGracias." class="contact-channel email" aria-label="Enviar email">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="channel-text">
+              <strong>hola.nexaflow@gmail.com</strong>
+              <span>Email</span>
+            </div>
+          </a>
+        </div>
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <svg viewBox="0 0 16 16" fill="none" width="11" height="11"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Auditoría gratuita
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 16 16" fill="none" width="11" height="11"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Especializados en negocios locales
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 16 16" fill="none" width="11" height="11"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Diseño premium + automatización
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 16 16" fill="none" width="11" height="11"><polyline points="3 8 6.5 11.5 13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Primeros resultados en &lt;72h
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" data-reveal aria-label="Formulario de contacto"
+            action="https://formspree.io/f/mlgvlraj" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Tu nombre</label>
+            <input type="text" id="f-name" name="name" placeholder="María García" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="f-business">Tu negocio</label>
+            <input type="text" id="f-business" name="business" placeholder="Restaurante García, Estudio Pérez…" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-email">Email o teléfono</label>
+            <input type="text" id="f-email" name="contact" placeholder="email@ejemplo.com / 612 345 678" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-message">¿Qué quieres mejorar?</label>
+          <textarea id="f-message" name="message" rows="4" placeholder="Más clientes, menos trabajo manual, mejor presencia digital… cuéntanos." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+          <span class="btn-text">Solicitar valoración gratuita</span>
+          <span class="btn-loading" aria-hidden="true">Enviando…</span>
+        </button>
+        <div class="form-trust-row">
+          <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M8 1L9.5 5.5H14.5L10.5 8.5L12 13L8 10L4 13L5.5 8.5L1.5 5.5H6.5L8 1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          <span>Respondemos en menos de 24h · Sin spam · Sin permanencias</span>
+        </div>
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg>
+          Recibido. Te enviamos una valoración inicial en menos de 24h.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo footer-logo" aria-label="NexaFlow Studio">
+          Nexa<span class="logo-accent">Flow</span><span class="logo-dot">.</span>
+        </a>
+        <p class="footer-tagline">Webs, automatización y sistemas IA<br>para negocios locales.</p>
+        <div class="footer-social">
+          <a href="https://ig.me/m/nexaflow.studio" target="_blank" rel="noopener" aria-label="Instagram @nexaflow.studio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/34644218863?text=Hola%2C%20os%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:hola.nexaflow@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%2C%0A%0AOs%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20digitales%20para%20mi%20negocio.%0A%0AGracias." aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="#servicios">Diseño web premium</a>
+          <a href="#servicios">Chatbots con IA</a>
+          <a href="#servicios">Automatizaciones</a>
+          <a href="#servicios">Google Maps</a>
+          <a href="#servicios">SEO local</a>
+          <a href="#servicios">Branding digital</a>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#proceso">Proceso</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#diferenciacion">¿Por qué nosotros?</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto directo</h4>
+          <a href="mailto:hola.nexaflow@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%2C%0A%0AOs%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20digitales%20para%20mi%20negocio.%0A%0AGracias.">hola.nexaflow@gmail.com</a>
+          <a href="https://ig.me/m/nexaflow.studio" target="_blank" rel="noopener">@nexaflow.studio</a>
+          <a href="https://wa.me/34644218863?text=Hola%2C%20os%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20para%20mi%20negocio." target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaFlow Studio. Todos los derechos reservados.</p>
+      <p class="footer-tagline-sm">Diseñado con precisión. Construido para convertir.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/34644218863?text=Hola%2C%20os%20escribo%20desde%20vuestra%20web.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20para%20mi%20negocio." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="main.js?v=20260524g"></script>
+</body>
+</html>
